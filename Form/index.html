@@ -5,15 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Form</title>
+
+        <style>
+            body{
+                background-color: #f0f2f5
+            }
+            h2{
+                text-align: center;
+                font-weight: bold;
+                color: blue;
+                font-size: 40px;
+            }
+            form{
+                /* height: 500px; */
+                width: 500px;
+                background-color: #fff;
+                margin: auto;
+                padding: 30px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            label{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input{
+                background-color: #f0f2f5;
+                margin-bottom: 20px;
+                border-style: none;
+                border-radius: 5px;
+                font-size: 18px;
+                padding: 8px;
+                color: #ff0074f5;
+                border: 1px solid #dddfe2
+            }
+            .submit{
+                background-color: blue;
+                color: rgb(255, 255, 255);
+                padding: 10px 40px;
+                border-style: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        </style>
 </head>
 <body>
     <h2>Welcome Please Login In</h2>
     <form action="">
-        <label for="fname">First Name</label>
+        <label for="fname">First Name: </label>
         <input type="text" id="fname" name="fname"> <br>
-        <label for="lname">Last Name</label>
+        <label for="lname">Last Name: </label>
         <input type="text" id="lname" name="lname"><br>
-        <input type="submit" value="Submit">
+        <input class="submit" type="submit" value="Submit">
     </form>
 </body>
 </html>
